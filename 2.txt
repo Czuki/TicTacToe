@@ -1,0 +1,36 @@
+# def player_move_X(plansza):
+# 	try:
+# 		print('Player 1: Where to place \'X\'?')
+# 		i = int(input('Select row: 1-3'))
+# 		j = int(input('Select column: 1-3'))
+# 		if plansza[i-1][j-1] != [' ']:
+# 			print('Place taken, please try again')
+# 			player_move_X(plansza)
+# 		else:
+# 			plansza[i-1][j-1] = ['X']
+# 		return plansza
+# 	except IndexError:
+# 		print('Wrong value!')
+# 		player_move_X(plansza)
+# 	except ValueError:
+# 		print('Wrong value!')
+# 		player_move_X(plansza)
+
+# def player_move_O(plansza):
+# 	try:
+# 		print('Player 2: Where to place \'O\'?')
+# 		i = int(input('Select row: 1-3'))
+# 		j = int(input('Select column: 1-3'))
+# 		if plansza[i-1][j-1] != [' ']:
+# 			print('Place taken, please try again')
+# 			player_move_O(plansza)
+# 		else:
+# 			plansza[i-1][j-1] = ['O']
+# 		return plansza
+# 	except IndexError:
+# 		print('Wrong value!')
+# 		player_move_O(plansza)
+# 	except ValueError:
+# 		print('Wrong value!')
+# 		player_move_0(plansza)
+
