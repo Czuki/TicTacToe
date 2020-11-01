@@ -4,9 +4,12 @@ Simple in-console interface, choose a field by selecting 1-9 from keyboard.
 
 Game board field numbers:
 
-1 | 2 | 3\n
-4 | 5 | 6\n
-7 | 8 | 9\n
+1 | 2 | 3
+
+4 | 5 | 6
+
+7 | 8 | 9
+
 
 game.py - main script for executing game in console
 
