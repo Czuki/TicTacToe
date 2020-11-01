@@ -1,26 +1,23 @@
-import board
-import game_logic
+import board  # import board.py file to have acces to a code inside
+import game_logic  # import game_logic.py file
 
-def round(symbol, plansza):
-	board.show_board(plansza)
-	game_logic.player_move(symbol, plansza)
-	win = False
-	if game_logic.win_check(symbol, plansza) == True:
-		win = True
-	return win
+
+def round(symbol, plansza):  # function for playing each round symbol is an 'X' OR 'O' string
+    board.show_board(plansza)  # shows board
+    game_logic.player_move(symbol, plansza)  # goes to the game_logic.py file and opens player_move function
+    return game_logic.win_check(symbol, plansza) #returns True/False If True = player has won and game ends through break statements in lines 16 or 18
+
 
 def run_game():
+    plansza = board.draw_board()
+    round('X', plansza)         #total of 9 moves possible we start with 'X'
+    for i in range(4):          #last 8 moves nested in for loop
+        if round('O', plansza):
+            break
+        if round('X', plansza):
+            break
+    board.show_board(plansza)   #draws board after game is over
 
-	plansza = board.draw_board()
-	round('X', plansza)
-	for i in range(4):
-		if round('O', plansza) == True:
-			print(f'\'O\' in line Player 2 Wins!')
-			break
-		if round('X', plansza) == True:
-			print(f'\'X\' in line Player 1 Wins!')
-			break
-	board.show_board(plansza)
 
-if __name__ == "__main__":
-	run_game()
+if __name__ == "__main__":  #ensures run_game is run only if module is being run directly
+    run_game()
