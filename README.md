@@ -17,4 +17,9 @@ game_logic.py - contains win_check function for checking win condition after eac
 
 board.py - contains functions for drawing and creating a board
 
+#ToDoList:
+- Nicer board drawing 
+- 'Restart' and 'Quit' option during game
+- Playing with different symbols selected by players
+
 #Made by Czuki
